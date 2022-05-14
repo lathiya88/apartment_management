@@ -24,13 +24,19 @@ class Const{
   static const double kPadding3 = 3.0;
   static const double kPadding5 = 5.0;
   static const double kPaddingM = 15.0;
+  static const double kPadding16 = 16.0;
+  static const double kPadding12 = 12.0;
+  static const double kPadding18 = 18.0;
   static const double kPaddingL = 25.0;
+  static const double kPadding27 = 27.0;
   static const double kPaddingXL = 32.0;
   static const double kPadding30 = 30.0;
   static const double kPadding40 = 40.0;
   static const double kPadding44 = 44.0;
   static const double kPaddingXXL = 50.0;
   static const double kPadding10 = 10.0;
+  static const double kPadding21= 21.0;
+  static const double kPadding78= 78.0;
   static const double kPadding20= 20.0;
   static const double kPadding70= 70.0;
   static const double kPadding60= 60.0;
@@ -80,6 +86,8 @@ class Const{
   static double kFont12 = 12.sp;
   static double kFont11 = 11.sp;
   static double kFont9= 9.sp;
+  static double kFont8= 8.sp;
+
 
 
   /// Large

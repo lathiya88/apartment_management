@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../../core/strings.dart';
 
 class RequestComplain extends StatefulWidget {
@@ -192,35 +193,63 @@ class _RequestComplainState extends State<RequestComplain> {
                 ),
               ],
             ),
-            Container(
-              height: Const.kPadding100.r,
-              width: Const.kPadding345.r,
-              decoration: BoxDecoration(
-                  color: Const.offwhite,
-                  borderRadius: BorderRadius.circular(Const.kPadding10.r)),
-              child: Padding(
-                padding: const EdgeInsets.only(
-                    left: Const.kPaddingM, top: Const.kPaddingM),
-                child: Text(
-                  Strings.msgs,
-                  style: TextStyle(fontSize: Const.kFont12.r),
+            TextField(
+              // textAlignVertical: TextAlignVertical.top,
+              // expands: true,
+              // maxLines: null,
+              decoration: const InputDecoration(
+                hintText: Strings.msgs,
+                contentPadding:
+                    EdgeInsets.symmetric(vertical: Const.kPaddingXXL),
+                border: const OutlineInputBorder(
+                  borderRadius: const BorderRadius.all(
+                    const Radius.circular(Const.kPaddingM),
+                  ),
                 ),
               ),
             ),
+            // Container(
+            //   height: Const.kPadding100.r,
+            //   width: Const.kPadding345.r,
+            //   decoration: BoxDecoration(
+            //       color: Const.offwhite,
+            //       borderRadius: BorderRadius.circular(Const.kPadding10.r)),
+            //   child: Padding(
+            //     padding: const EdgeInsets.only(
+            //         left: Const.kPaddingM, top: Const.kPaddingM),
+            //     child: Text(
+            //       Strings.msgs,
+            //       style: TextStyle(fontSize: Const.kFont12.r),
+            //     ),
+            //   ),
+            // ),
             SizedBox(height: Const.kPaddingM.r),
             Center(
                 child: Text(Strings.uploadimg,
                     style: TextStyle(fontSize: Const.kFont20))),
             SizedBox(height: Const.kPadding20.r),
-            Center(
-              child: Row(
-                children: [
-                  Icon(Icons.camera_alt,
-                      color: Const.bluecolor, size: Const.kPaddingXXL.r),
-                  Icon(Icons.add_photo_alternate,
-                      color: Const.bluecolor, size: Const.kPaddingXXL.r),
-                ],
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  height: 40.h,
+                  width: 40.w,
+                  child: SvgPicture.asset(
+                    'assets/image/camera.svg',
+                    height: 33,
+                    width: 33,
+                  ),
+                ),
+                Container(
+                  height: 40.h,
+                  width: 40.w,
+                  child: SvgPicture.asset(
+                    'assets/image/gallery.svg',
+                    height: 33,
+                    width: 33,
+                  ),
+                ),
+              ],
             ),
             SizedBox(height: Const.kPadding137.r),
             Container(

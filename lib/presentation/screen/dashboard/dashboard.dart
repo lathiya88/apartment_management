@@ -32,9 +32,13 @@ class _DashBoardState extends State<DashBoard> {
                 color: Colors.transparent,
                 child: Center(
                   child: Container(
-                    color: Colors.white,
                     height: Const.kPadding391.r,
                     width: Const.kPadding284.r,
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                        borderRadius:
+                        BorderRadius.circular(Const.kPaddingM.r)
+                    ),
                     child: Column(
                       children: [
                         SizedBox(height: Const.kPadding20.r),
