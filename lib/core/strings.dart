@@ -28,9 +28,13 @@ class Strings{
   static const String  apartname= "Appartment Name";
   static const String  maintencetype= "MAINTENANCE TYPE";
   static const String  amount= "Amount";
+  static const String  alshah= "ALIAS SHAH";
   static const String  paymenttype= "Payment Type";
   static const String  cty= "City";
   static const String  createadmin= "Create Admin User";
+  static const String  accountname= "Account Name";
+  static const String  accountgrp= "Account Group";
+  static const String  openingbala= "OPENING BALANCE";
   static const String  alreadyhave= "Already have an account?";
   static const String  resetpass= "Reset Password";
   static const String  newpasstologin= "Create your new password and continue to login";

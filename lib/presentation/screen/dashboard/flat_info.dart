@@ -12,17 +12,15 @@ class Flat_Info extends StatefulWidget {
   @override
   State<Flat_Info> createState() => _Flat_InfoState();
 }
-bool _pressNo = false;
-var _pressYes;
 
+bool _pressNo = false;
 
 class _Flat_InfoState extends State<Flat_Info> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: (){
-        },
+        onPressed: () {},
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -72,12 +70,17 @@ class _Flat_InfoState extends State<Flat_Info> {
                   child: Container(
                     height: Const.kPadding20.r,
                     width: Const.kPadding100.r,
-                    color: Const.offwhite,
-                    child: Text(
-                      Strings.c310,
-                      style: TextStyle(
-                          fontSize: Const.kFont11.r,
-                          fontWeight: FontWeight.bold),
+                    decoration: BoxDecoration(
+                      color: Const.offwhite,
+                      borderRadius: BorderRadius.circular(Const.kPaddingS.r),
+                    ),
+                    child: Center(
+                      child: Text(
+                        Strings.c310,
+                        style: TextStyle(
+                            fontSize: Const.kFont11.r,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
@@ -118,12 +121,17 @@ class _Flat_InfoState extends State<Flat_Info> {
                   child: Container(
                     height: Const.kPadding20.r,
                     width: Const.kPadding120.r,
-                    color: Const.offwhite,
-                    child: Text(
-                      Strings.fltdetail,
-                      style: TextStyle(
-                          fontSize: Const.kFont11.r,
-                          fontWeight: FontWeight.bold),
+                    decoration: BoxDecoration(
+                      color: Const.offwhite,
+                      borderRadius: BorderRadius.circular(Const.kPaddingS.r),
+                    ),
+                    child: Center(
+                      child: Text(
+                        Strings.fltdetail,
+                        style: TextStyle(
+                            fontSize: Const.kFont11.r,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ),
@@ -285,7 +293,7 @@ class _Flat_InfoState extends State<Flat_Info> {
               height: Const.kPadding5,
             ),
             Container(
-              height: Const.kPadding120.r,
+              height: Const.kPadding107.r,
               width: Const.kPadding345.r,
               color: Const.offwhite,
               padding: EdgeInsets.only(
@@ -468,53 +476,87 @@ class _Flat_InfoState extends State<Flat_Info> {
             SizedBox(
               height: Const.kPadding5,
             ),
-            Container(
-              height: Const.kPadding170.r,
-              width: Const.kPadding345.r,
-              color: Const.offwhite,
-              padding: EdgeInsets.only(
-                  top: Const.kPadding10.r, left: Const.kPaddingL.r),
-              child: Table(
-                children: [
-                  TableRow(
-                    children: [
-
-                      Text(
-                        Strings.vehicno,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        Strings.datime,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        Strings.status,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        Strings.vehictype,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                    ],
-                  ),
-                  TableRow(
-                    children: [
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Container(
+                height: 130.h,
+                width: 500.w,
+                color: Const.offwhite,
+                padding: EdgeInsets.only(
+                    top: Const.kPadding10.r, left: Const.kPaddingL.r),
+                child: Table(
+                  children: [
+                    TableRow(
+                      children: [
+                        Text(
+                          Strings.vehicno,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.datime,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 10),
+                          child: Text(
+                            Strings.status,
+                            style: TextStyle(
+                                color: Const.bluecolor,
+                                fontSize: Const.kFont12.r,
+                                fontWeight: FontWeight.bold),
+                            textScaleFactor: 1.5,
+                          ),
+                        ),
+                        Text(
+                          Strings.vehictype,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                      ],
+                    ),
+                    TableRow(
+                      children: [
+                        Text(
+                          Strings.numbrplate,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.date6,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 40),
+                          child: Text(
+                            Strings.inin,
+                            style: TextStyle(
+                                color: Const.black, fontSize: Const.kFont9.r),
+                            textScaleFactor: 1.5,
+                          ),
+                        ),
+                        Text(
+                          Strings.twowhel,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                      ],
+                    ),
+                    TableRow(children: [
                       Text(
                         Strings.numbrplate,
                         style: TextStyle(
@@ -522,16 +564,19 @@ class _Flat_InfoState extends State<Flat_Info> {
                         textScaleFactor: 1.5,
                       ),
                       Text(
-                        Strings.date6,
+                        Strings.date10,
                         style: TextStyle(
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,
                       ),
-                      Text(
-                        Strings.inin,
-                        style: TextStyle(
-                            color: Const.black, fontSize: Const.kFont9.r),
-                        textScaleFactor: 1.5,
+                      Padding(
+                        padding: const EdgeInsets.only(left: 40),
+                        child: Text(
+                          Strings.out,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
                       ),
                       Text(
                         Strings.twowhel,
@@ -539,35 +584,9 @@ class _Flat_InfoState extends State<Flat_Info> {
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,
                       ),
-                    ],
-                  ),
-                  TableRow(children: [
-                    Text(
-                      Strings.numbrplate,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      Strings.date10,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      Strings.out,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      Strings.twowhel,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                  ]),
-                ],
+                    ]),
+                  ],
+                ),
               ),
             ),
             SizedBox(height: Const.kPaddingM.r),
@@ -587,85 +606,88 @@ class _Flat_InfoState extends State<Flat_Info> {
             SizedBox(
               height: Const.kPadding5,
             ),
-            Container(
-              height: Const.kPadding137.r,
-              width: Const.kPadding345.r,
-              color: Const.offwhite,
-              padding: EdgeInsets.only(
-                  top: Const.kPadding10.r, left: Const.kPaddingL.r),
-              child: Table(
-                children: [
-                  TableRow(
-                    children: [
+            SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+              child: Container(
+                height: 80.h,
+                width: 400.w,
+                color: Const.offwhite,
+                padding: EdgeInsets.only(
+                    top: Const.kPadding10.r, left: Const.kPaddingL.r),
+                child: Table(
+                  children: [
+                    TableRow(
+                      children: [
+                        Text(
+                          Strings.datet,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.status,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.member,
+                          style: TextStyle(
+                              color: Const.bluecolor,
+                              fontSize: Const.kFont12.r,
+                              fontWeight: FontWeight.bold),
+                          textScaleFactor: 1.5,
+                        ),
+                      ],
+                    ),
+                    TableRow(
+                      children: [
+                        Text(
+                          Strings.date6,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.locked,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                        Text(
+                          Strings.female,
+                          style: TextStyle(
+                              color: Const.black, fontSize: Const.kFont9.r),
+                          textScaleFactor: 1.5,
+                        ),
+                      ],
+                    ),
+                    TableRow(children: [
                       Text(
-                        Strings.datet,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        Strings.status,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                      Text(
-                        Strings.member,
-                        style: TextStyle(
-                            color: Const.bluecolor,
-                            fontSize: Const.kFont12.r,
-                            fontWeight: FontWeight.bold),
-                        textScaleFactor: 1.5,
-                      ),
-                    ],
-                  ),
-                  TableRow(
-                    children: [
-                      Text(
-                        Strings.date6,
+                        Strings.date10,
                         style: TextStyle(
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,
                       ),
                       Text(
-                        Strings.locked,
+                        Strings.unlocked,
                         style: TextStyle(
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,
                       ),
                       Text(
-                        Strings.female,
+                        Strings.male,
                         style: TextStyle(
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,
                       ),
-                    ],
-                  ),
-                  TableRow(children: [
-                    Text(
-                      Strings.date10,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      Strings.unlocked,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                    Text(
-                      Strings.male,
-                      style: TextStyle(
-                          color: Const.black, fontSize: Const.kFont9.r),
-                      textScaleFactor: 1.5,
-                    ),
-                  ]),
-                ],
+                    ]),
+                  ],
+                ),
               ),
             ),
             SizedBox(height: Const.kPaddingM.r),
@@ -686,7 +708,7 @@ class _Flat_InfoState extends State<Flat_Info> {
             GestureDetector(
               onTap: () {
                 setState(() {
-                   _pressNo = !_pressNo;
+                  _pressNo = !_pressNo;
                 });
               },
               child: Row(
@@ -705,32 +727,54 @@ class _Flat_InfoState extends State<Flat_Info> {
                         ],
                         color: Const.offwhite,
                         borderRadius: BorderRadius.circular(Const.kPaddingS.r)),
-                    child: Column(
+                    child: Row(
                       children: [
-                        SizedBox(height: Const.kPadding3.r),
-                        Padding(
-                          padding: const EdgeInsets.only(left: Const.kPadding170),
-                          child: Container(
-                            height: Const.kPaddingXL.r,
-                            width: Const.kPadding170.r,
-
-                            decoration: BoxDecoration(
-                                color: Const.bluecolor,
-                                borderRadius:
-                                    BorderRadius.circular(Const.kPaddingS.r)),
-                            child: Center(
-                              child: RichText(
-                                text: TextSpan(
-                                  children: <TextSpan>[
-                                    TextSpan(
-                                      text: Strings.no,
-                                      style: TextStyle(
-                                        color: Colors.white,
-                                        fontSize: Const.kFont12.r,
-                                      ),
+                        Container(
+                          height: Const.kPaddingXL.r,
+                          width: Const.kPadding170.r,
+                          decoration: BoxDecoration(
+                              color: _pressNo
+                                  ? Const.bluecolor
+                                  : Const.offwhite.withOpacity(0.4),
+                              borderRadius:
+                                  BorderRadius.circular(Const.kPaddingS.r)),
+                          child: Center(
+                            child: RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: Strings.yes,
+                                    style: TextStyle(
+                                      color: Const.white,
+                                      fontSize: Const.kFont12.r,
                                     ),
-                                  ],
-                                ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                        Container(
+                          height: Const.kPaddingXL.r,
+                          width: Const.kPadding170.r,
+                          decoration: BoxDecoration(
+                              color: _pressNo
+                                  ? Const.offwhite.withOpacity(0.4)
+                                  : Const.bluecolor,
+                              borderRadius:
+                                  BorderRadius.circular(Const.kPaddingS.r)),
+                          child: Center(
+                            child: RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                    text: Strings.no,
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: Const.kFont12.r,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
@@ -775,7 +819,7 @@ class _Flat_InfoState extends State<Flat_Info> {
                   TableRow(
                     children: [
                       Text(
-                        Strings.rentedto,
+                        Strings.contactno,
                         style: TextStyle(
                             color: Const.black, fontSize: Const.kFont9.r),
                         textScaleFactor: 1.5,

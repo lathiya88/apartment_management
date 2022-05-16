@@ -50,10 +50,17 @@ class _RequestComplainState extends State<RequestComplain> {
               padding: EdgeInsets.all(Const.kPaddingS.r),
               child: TextField(
                 decoration: const InputDecoration(
+                  suffixIcon: Align(
+                    widthFactor: 1.0,
+                    heightFactor: 1.0,
+                    child: Icon(
+                      Icons.date_range_outlined,
+                    ),
+                  ),
                   hintText: Strings.dt,
                   border: const OutlineInputBorder(
                     borderRadius: const BorderRadius.all(
-                      const Radius.circular(Const.kPadding20),
+                      const Radius.circular(Const.kPaddingM),
                     ),
                   ),
                 ),
@@ -168,13 +175,13 @@ class _RequestComplainState extends State<RequestComplain> {
             ),
             SizedBox(height: Const.kPadding5.r),
             Padding(
-              padding: EdgeInsets.all(Const.kPaddingS.r),
+              padding: EdgeInsets.only(left : Const.kPaddingS.r),
               child: TextField(
                 decoration: const InputDecoration(
                   hintText: Strings.reqcomplain,
                   border: const OutlineInputBorder(
                     borderRadius: const BorderRadius.all(
-                      const Radius.circular(Const.kPadding20),
+                      const Radius.circular(Const.kPaddingM),
                     ),
                   ),
                 ),
@@ -193,36 +200,22 @@ class _RequestComplainState extends State<RequestComplain> {
                 ),
               ],
             ),
-            TextField(
-              // textAlignVertical: TextAlignVertical.top,
-              // expands: true,
-              // maxLines: null,
-              decoration: const InputDecoration(
-                hintText: Strings.msgs,
-                contentPadding:
-                    EdgeInsets.symmetric(vertical: Const.kPaddingXXL),
-                border: const OutlineInputBorder(
-                  borderRadius: const BorderRadius.all(
-                    const Radius.circular(Const.kPaddingM),
+            Container(
+              height: 104.h,
+              width: 345.w,
+              child: TextField(
+                decoration: const InputDecoration(
+                  hintText: Strings.msgs,
+                  contentPadding:
+                      EdgeInsets.symmetric(vertical: 50),
+                  border: const OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(
+                      const Radius.circular(Const.kPaddingM),
+                    ),
                   ),
                 ),
               ),
             ),
-            // Container(
-            //   height: Const.kPadding100.r,
-            //   width: Const.kPadding345.r,
-            //   decoration: BoxDecoration(
-            //       color: Const.offwhite,
-            //       borderRadius: BorderRadius.circular(Const.kPadding10.r)),
-            //   child: Padding(
-            //     padding: const EdgeInsets.only(
-            //         left: Const.kPaddingM, top: Const.kPaddingM),
-            //     child: Text(
-            //       Strings.msgs,
-            //       style: TextStyle(fontSize: Const.kFont12.r),
-            //     ),
-            //   ),
-            // ),
             SizedBox(height: Const.kPaddingM.r),
             Center(
                 child: Text(Strings.uploadimg,
@@ -235,7 +228,7 @@ class _RequestComplainState extends State<RequestComplain> {
                   height: 40.h,
                   width: 40.w,
                   child: SvgPicture.asset(
-                    'assets/image/camera.svg',
+                    'assets/icon/camera.svg',
                     height: 33,
                     width: 33,
                   ),
@@ -244,7 +237,7 @@ class _RequestComplainState extends State<RequestComplain> {
                   height: 40.h,
                   width: 40.w,
                   child: SvgPicture.asset(
-                    'assets/image/gallery.svg',
+                    'assets/icon/gallery.svg',
                     height: 33,
                     width: 33,
                   ),

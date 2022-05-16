@@ -154,7 +154,7 @@ class _ManageFlatState extends State<ManageFlat> {
                       style: TextStyle(
                         fontSize: 12,
                       ),
-                      textAlign: TextAlign.center,
+                      // textAlign: TextAlign.center,
                       decoration: const InputDecoration(
                         hintText: Strings.rentalname,
                         contentPadding:
@@ -171,7 +171,7 @@ class _ManageFlatState extends State<ManageFlat> {
                       style: TextStyle(
                         fontSize: 12,
                       ),
-                      textAlign: TextAlign.center,
+                      // textAlign: TextAlign.center,
                       decoration: const InputDecoration(
                         hintText: Strings.contctno,
                         contentPadding:
@@ -353,7 +353,7 @@ class _ManageFlatState extends State<ManageFlat> {
                  TableRow(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 9,top: 5),
+                        padding: const EdgeInsets.only(top: 5),
                         child: Container(
                           height: Const.kPadding21.r,
                           width: Const.kPadding78.r,
@@ -414,7 +414,7 @@ class _ManageFlatState extends State<ManageFlat> {
                   TableRow(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 9,top: 5),
+                        padding: const EdgeInsets.only(top: 5),
                         child: Container(
                           height: Const.kPadding21.r,
                           width: Const.kPadding78.r,
@@ -475,7 +475,7 @@ class _ManageFlatState extends State<ManageFlat> {
                   TableRow(
                     children: [
                       Padding(
-                        padding: const EdgeInsets.only(left: 9,top: 5),
+                        padding: const EdgeInsets.only(top: 5),
                         child: Container(
                           height: Const.kPadding21.r,
                           width: Const.kPadding78.r,
@@ -693,13 +693,13 @@ class _ManageFlatState extends State<ManageFlat> {
                       Container(
                         height: 34.h,
                         width: 34.w,
-                        child: SvgPicture.asset('assets/image/camera.svg',
+                        child: SvgPicture.asset('assets/icon/camera.svg',
                             height: 33, width: 33),
                       ),
                       Container(
                         height: 34.h,
                         width: 34.w,
-                        child: SvgPicture.asset('assets/image/gallery.svg',
+                        child: SvgPicture.asset('assets/icon/gallery.svg',
                             height: 33, width: 33),
                       ),
                     ],

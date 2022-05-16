@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="137" height="148" viewBox="0 0 137 148">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#81aaff"/>
+      <stop offset="1" stop-color="#486ebf"/>
+    </radialGradient>
+  </defs>
+  <g id="Group_66522" data-name="Group 66522" transform="translate(-128 -230)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" cx="8" cy="8" r="8" transform="translate(128 243)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_2" data-name="Ellipse 2" cx="6" cy="6" r="6" transform="translate(128 337)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_3" data-name="Ellipse 3" cx="3.5" cy="3.5" r="3.5" transform="translate(174 364)" fill="url(#radial-gradient)"/>
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" cx="8" cy="7.5" rx="8" ry="7.5" transform="translate(229 363)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="5" cy="5" r="5" transform="translate(236 249)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_5" data-name="Ellipse 5" cx="3" cy="3" r="3" transform="translate(259 290)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="2.5" cy="2.5" r="2.5" transform="translate(257 332)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_11" data-name="Ellipse 11" cx="2.5" cy="2.5" r="2.5" transform="translate(138 299)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_10" data-name="Ellipse 10" cx="2.5" cy="2.5" r="2.5" transform="translate(202 230)" fill="url(#radial-gradient)"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.5" cy="2.5" r="2.5" transform="translate(186 252)" fill="url(#radial-gradient)"/>
+    <g id="Group_66521" data-name="Group 66521" transform="translate(-6 -59)">
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="33.5" cy="33.5" r="33.5" transform="translate(174 337)" fill="url(#radial-gradient)"/>
+      <g id="Iconly_Bold_Tick_Square" data-name="Iconly/Bold/Tick Square" transform="translate(195 358)">
+        <path id="Tick_Square" data-name="Tick Square" d="M18.349,25.591H7.255C2.916,25.591,0,22.553,0,18.031V7.575C0,3.044,2.916,0,7.255,0H18.349c4.332,0,7.243,3.044,7.243,7.575V18.031C25.591,22.553,22.681,25.591,18.349,25.591ZM8.24,11.676a1.12,1.12,0,0,0-.793,1.913l3.045,3.032a1.128,1.128,0,0,0,1.574,0l6.078-6.077a1.122,1.122,0,0,0-1.587-1.587l-5.285,5.285L9.033,12A1.111,1.111,0,0,0,8.24,11.676Z" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

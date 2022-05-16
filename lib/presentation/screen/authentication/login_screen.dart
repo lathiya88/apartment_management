@@ -1,5 +1,6 @@
 import 'package:apartment_management/core/const.dart';
 import 'package:apartment_management/core/strings.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../../gen/assets.gen.dart';
@@ -40,43 +41,40 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       Row(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: Const.kPadding10.r),
-            child: Text(
-              Strings.email,
-              style: TextStyle(fontSize: Const.kFont11.r),
-            ),
+          Text(
+            Strings.email,
+            style: TextStyle(fontSize: Const.kFont11.r),
           ),
         ],
       ),
       Padding(
-        padding: EdgeInsets.all(Const.kPaddingM.r),
+        padding: EdgeInsets.only(top: 5),
         child: TextField(
           keyboardType: TextInputType.emailAddress,
           decoration: const InputDecoration(
             prefixIcon: Icon(Icons.mail, color: Colors.grey),
             hintText: Strings.email,
-            border: const OutlineInputBorder(
+            border:
+            const OutlineInputBorder(
               borderRadius: const BorderRadius.all(
-                const Radius.circular(20.0),
+                const Radius.circular(15.0),
               ),
             ),
           ),
+          style: TextStyle(fontSize: Const.kFont12, color: Const.subtitle),
         ),
       ),
+      SizedBox(height: 9.h),
       Row(
         children: [
-          Padding(
-            padding: EdgeInsets.only(left: Const.kPadding10.r),
-            child: Text(
-              Strings.passwrord,
-              style: TextStyle(fontSize: Const.kFont15.r),
-            ),
+          Text(
+            Strings.passwrord,
+            style: TextStyle(fontSize: Const.kFont11.r),
           ),
         ],
       ),
       Padding(
-        padding: EdgeInsets.all(Const.kPaddingM.r),
+        padding: EdgeInsets.only(top: 5),
         child: TextField(
           obscureText: isObscure,
           decoration: InputDecoration(
@@ -92,39 +90,32 @@ class _LoginScreenState extends State<LoginScreen> {
                     Icon(isObscure ? Icons.visibility : Icons.visibility_off)),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(20.0),
+                Radius.circular(15.0),
               ),
             ),
           ),
+          style: TextStyle(fontSize: Const.kFont12, color: Const.subtitle),
         ),
       ),
-      RichText(
-        text: TextSpan(
-          children: <TextSpan>[
-            TextSpan(
-                text: Strings.forgot,
-                style: TextStyle(
-                  color: Const.subtitle,
-                ),
-                recognizer: TapGestureRecognizer()
-                  ..onTap = () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) {
-                      return ForgotPassword();
-                    }));
-                  }),
+      GestureDetector(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) {
+            return ForgotPassword();
+          }));
+        },
+        child: Row(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 250, top: 5),
+              child: Text(
+                Strings.forgot,
+                style:
+                    TextStyle(color: Const.subtitle, fontSize: Const.kFont12.r),
+              ),
+            )
           ],
         ),
       ),
-      // Padding(
-      //   padding: EdgeInsets.only(right: 20.h.w),
-      //   child: Row(
-      //     mainAxisAlignment: MainAxisAlignment.end,
-      //     children: [
-      //       Text("Forgot Password?", style: TextStyle(color: Colors.grey)),
-      //     ],
-      //   ),
-      // ),
       Padding(
         padding: EdgeInsets.only(top: Const.kPadding20.r),
         child: Row(
@@ -209,7 +200,7 @@ class _LoginScreenState extends State<LoginScreen> {
             width: Const.kSpace87W,
             color: Colors.white60,
             child: SvgPicture.asset(
-              'assets/image/facebook.svg',
+              'assets/icon/facebook.svg',
               height: Const.kPaddingXXL.r,
             ),
           ),
@@ -218,7 +209,7 @@ class _LoginScreenState extends State<LoginScreen> {
             width: Const.kSpace87W,
             color: Colors.white60,
             child: SvgPicture.asset(
-              'assets/image/google.svg',
+              'assets/icon/google.svg',
               height: Const.kPaddingXXL.r,
             ),
           ),
@@ -227,7 +218,7 @@ class _LoginScreenState extends State<LoginScreen> {
             width: Const.kSpace87W.r,
             color: Colors.white60,
             child: SvgPicture.asset(
-              'assets/image/apple.svg',
+              'assets/icon/apple.svg',
               height: Const.kPaddingXXL.r,
             ),
           ),

@@ -125,12 +125,9 @@ class _CreateAccountState extends State<CreateAccount> {
           SizedBox(height: Const.kPaddingXXL.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.firstname,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.firstname,
+                style: TextStyle(fontSize: Const.kFont11.r,color: Const.black),
               ),
             ],
           ),
@@ -146,17 +143,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.lastname,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.lastname,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -172,17 +167,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.email,
-                  style: TextStyle(fontSize: Const.kFont12.r),
-                ),
+              Text(
+                Strings.email,
+                style: TextStyle(fontSize: Const.kFont12.r),
               ),
             ],
           ),
@@ -199,17 +192,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.contactnum,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.contactnum,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -227,17 +218,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.createpass,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.createpass,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -253,17 +242,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.confirmpass,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.confirmpass,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -280,17 +267,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.apartname,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.apartname,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -307,17 +292,15 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(height: Const.kPadding10.r),
           Row(
             children: [
-              Padding(
-                padding: EdgeInsets.only(left: Const.kPaddingM.r),
-                child: Text(
-                  Strings.cty,
-                  style: TextStyle(fontSize: Const.kFont11.r),
-                ),
+              Text(
+                Strings.cty,
+                style: TextStyle(fontSize: Const.kFont11.r),
               ),
             ],
           ),
@@ -333,6 +316,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
               ),
+              style: TextStyle(fontSize: Const.kFont12,color: Const.subtitle),
             ),
           ),
           SizedBox(
@@ -351,7 +335,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   )
                 ],
                 color: Const.bluecolor,
-                borderRadius: BorderRadius.circular(Const.kSpaceM.r)),
+                borderRadius: BorderRadius.circular(20)),
             child: Center(
               child: Text(
                 Strings.createadmin,

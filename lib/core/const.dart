@@ -18,6 +18,8 @@ class Const{
   static const Color darkgrey= Color(0xff696969);
   static const Color yellow= Color(0xffEFC100);
   static const Color lightgrey= Color(0xffF8F8F8);
+  static const Color gry= Color(0xff969696);
+  static const Color lghtgrey= Color(0xffE5E5E5);
 
   /// Padding
   static const double kPaddingS = 8.0;

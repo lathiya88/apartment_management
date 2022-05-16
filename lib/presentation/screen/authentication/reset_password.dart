@@ -114,7 +114,7 @@ class ResetPassword extends StatelessWidget {
                             children: [
                               SizedBox(height: Const.kPadding20.r),
                               SvgPicture.asset(
-                                'assets/image/dailog.svg',
+                                'assets/icon/dailog.svg',
                                 height: Const.kPadding148.r,
                                 width: Const.kPadding137.r,
                               ),

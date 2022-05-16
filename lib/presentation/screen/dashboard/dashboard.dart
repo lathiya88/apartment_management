@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../../core/const.dart';
 import 'package:apartment_management/core/const.dart';
 import '../../../core/strings.dart';
@@ -35,10 +36,8 @@ class _DashBoardState extends State<DashBoard> {
                     height: Const.kPadding391.r,
                     width: Const.kPadding284.r,
                     decoration: BoxDecoration(
-                      color: Colors.white,
-                        borderRadius:
-                        BorderRadius.circular(Const.kPaddingM.r)
-                    ),
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(Const.kPaddingM.r)),
                     child: Column(
                       children: [
                         SizedBox(height: Const.kPadding20.r),
@@ -46,7 +45,8 @@ class _DashBoardState extends State<DashBoard> {
                           Strings.conforma,
                           style: TextStyle(
                             fontSize: 20,
-                            color: Const.bluecolor,fontWeight: FontWeight.bold,
+                            color: Const.bluecolor,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         SizedBox(
@@ -58,12 +58,13 @@ class _DashBoardState extends State<DashBoard> {
                               padding: EdgeInsets.only(left: Const.kPaddingM.r),
                               child: Text(
                                 Strings.selectfloor,
-                                style: TextStyle(fontSize: Const.kFont11.r,color: Const.subtitle),
+                                style: TextStyle(
+                                    fontSize: Const.kFont11.r,
+                                    color: Const.subtitle),
                               ),
                             ),
                           ],
                         ),
-
                         Padding(
                           padding: EdgeInsets.all(Const.kPaddingS.r),
                           child: TextField(
@@ -75,6 +76,7 @@ class _DashBoardState extends State<DashBoard> {
                                 ),
                               ),
                             ),
+                            style: TextStyle(fontSize: Const.kFont14.r,color: Const.subtitle),
                           ),
                         ),
                         SizedBox(height: Const.kPaddingS.r),
@@ -84,7 +86,9 @@ class _DashBoardState extends State<DashBoard> {
                               padding: EdgeInsets.only(left: Const.kPaddingM.r),
                               child: Text(
                                 Strings.selecttower,
-                                style: TextStyle(fontSize: Const.kFont11.r,color: Const.subtitle),
+                                style: TextStyle(
+                                    fontSize: Const.kFont11.r,
+                                    color: Const.subtitle),
                               ),
                             ),
                           ],
@@ -100,6 +104,7 @@ class _DashBoardState extends State<DashBoard> {
                                 ),
                               ),
                             ),
+                            style: TextStyle(fontSize: Const.kFont14.r,color: Const.subtitle),
                           ),
                         ),
                         SizedBox(height: Const.kPaddingS.r),
@@ -109,7 +114,9 @@ class _DashBoardState extends State<DashBoard> {
                               padding: EdgeInsets.only(left: Const.kPaddingM.r),
                               child: Text(
                                 Strings.selectfltnor,
-                                style: TextStyle(fontSize: Const.kFont11.r,color: Const.subtitle),
+                                style: TextStyle(
+                                    fontSize: Const.kFont11.r,
+                                    color: Const.subtitle),
                               ),
                             ),
                           ],
@@ -125,6 +132,7 @@ class _DashBoardState extends State<DashBoard> {
                                 ),
                               ),
                             ),
+                            style: TextStyle(fontSize: Const.kFont14.r,color: Const.subtitle),
                           ),
                         ),
                         SizedBox(height: Const.kPadding10.r),
@@ -140,7 +148,8 @@ class _DashBoardState extends State<DashBoard> {
                                   offset: Offset(0, 3)),
                             ],
                             color: Const.bluecolor,
-                            borderRadius: BorderRadius.circular(Const.kPaddingM.r),
+                            borderRadius:
+                                BorderRadius.circular(Const.kPaddingM.r),
                           ),
                           child: Center(
                             child: RichText(
@@ -157,8 +166,8 @@ class _DashBoardState extends State<DashBoard> {
                                           Navigator.push(context,
                                               MaterialPageRoute(
                                                   builder: (context) {
-                                                    return Flat_Info();
-                                                  }));
+                                            return Flat_Info();
+                                          }));
                                         }),
                                 ],
                               ),
@@ -210,23 +219,23 @@ class _DashBoardState extends State<DashBoard> {
                         color: Const.black,
                         fontWeight: FontWeight.bold),
                   ),
-                  // Icon(Icons.add_alert_sharp),
+                  SizedBox(width: 180.w),
+                  SvgPicture.asset("assets/icon/notifi.svg"),
+                  SizedBox(width: 10.w),
+                  SvgPicture.asset("assets/image/ttt.svg"),
                 ],
               ),
               SizedBox(height: Const.kPaddingXL.r),
-              Padding(
-                padding: const EdgeInsets.only(
-                    left: Const.kPaddingM, right: Const.kPaddingM),
-                child: TextField(
-                  onChanged: (value) {},
-                  controller: editingController,
-                  decoration: InputDecoration(
-                      hintText: Strings.search,
-                      prefixIcon: Icon(Icons.search, color: Const.grey),
-                      border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(
-                              Radius.circular(Const.kPadding20.r)))),
-                ),
+              TextField(
+                onChanged: (value) {},
+                controller: editingController,
+                decoration: InputDecoration(
+                    hintText: Strings.search,
+                    prefixIcon: Icon(Icons.search, color: Const.grey),
+                    border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Colors.grey, width: 2.0),
+                        borderRadius: BorderRadius.all(
+                            Radius.circular(Const.kPadding20.r)))),
               ),
               SizedBox(height: Const.kPadding40.r),
               GridView.count(
